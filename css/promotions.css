@@ -34,12 +34,22 @@
   text-justify: auto;
 }
 
-h1:hover
+.head1
+{
+color: #cf3000;
+}
+
+.head1:hover
 {
 color: #a200a5;
 }
 
-h2:hover {
+.head2
+{
+color: #cf3000;
+}
+
+.head2:hover {
   color: #a200a5;
 
 }
