@@ -13,3 +13,11 @@ let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 /* show result up to the largest interger */
 console.log(Difference_In_Days);
 console.log(Math.ceil(Difference_In_Days));
+
+//sort function
+const words = ['Audi', 'BMW', 'Mercedes Benz', 'Nissan', 'Tesla', 'Toyota'];
+
+const result = words.filter(word => word.length = 3);
+
+console.log(result);
+// expected output: Array ["BMW"]
