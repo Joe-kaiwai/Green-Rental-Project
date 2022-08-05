@@ -126,7 +126,7 @@ header("location: ./staff-login.php");?>
       <div class="d-flex justify-content-start align-items-center">
         <label for="searchOrderId" class="me-2">Order Number</label>
         <input type="text" class="me-2" id="searchOrderId" style="width:80px" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
-        <button class="order-fitter-icon ms-3" style="border:0;"><i class="fa-solid fa-filter fa-2x "></i></button>
+        <button class="order-fitter-icon ms-3" style="border:0;"><i class="fa-solid fa-filter fa-2x " onclick="filterOrder()"></i></button>
         <a href="" class="mx-2">All</a>
       </div>
 
@@ -153,7 +153,7 @@ header("location: ./staff-login.php");?>
             <tbody>
             <?php $orderQ = mysqli_query($dbConnection,"SELECT * from `order`");
               while($order = mysqli_fetch_assoc($orderQ)){
-                echo '<tr>
+                echo '<tr id="'.$order['order_id'].'" class="table-row orderList" >
                 <th scope="row">'.$order['order_id'].'</th>
                 <td>'.$order['customer_name'].'</td>
                 <td>'.$order['customer_email'].'</td>
