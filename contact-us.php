@@ -92,6 +92,7 @@
     <h2 style="text-align:start; margin:20px; margin-top:0px; margin-left:350px;font-weight:1000; text-decoration: underline; letter-spacing: 3px ;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:100px; color: rgb(109, 221, 118);">Us</h2>
   
     <p style="text-align:right; margin-right:170px;">Phone: +852 21231234</p>
+    <p style="text-align:right; margin-right:170px;">whatsapp: 61231234</p>
     <p style="text-align: right; margin-right:170px;"><a href="mailto:someone@example.com">CS.Greenrental@gmail.com</a></p>
 
 <div class="container container-ContactUs d-flex justify-content-center w-75 p-5 mb-5" style="border-radius:15px ;">

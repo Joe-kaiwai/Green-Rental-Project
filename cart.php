@@ -69,13 +69,14 @@ $car = mysqli_fetch_assoc($carQ);
                 </div>
 
               </td>
-              <td style ="text-align: right; line-height: 30px;"  width="30%">
-                <ul class="cart-priceList" style="list-style: none;">
-                  <li>日租：$<span class="rentFee"><?php echo $car['price'];?></span></li> 
-                  <li>日數：<span class="rentDay"></span></li>
-                  <li>按金：$<span class="deposit">10000</span></li>
-                  <li>(*按金將於還車後退回)</li>
-                </ul>
+              <td>
+                <div>
+                
+                <div style="width:150px;" >日租：$<span class="rentFee"><?php echo $car['price'];?></span></div> 
+                  <div style="width:150px;" >日數：<span class="rentDay"></span></div>
+                  <div style="width:150px;" >按金：$<span class="deposit">10000</span></div>
+                  <div style="width:170px;" >(*按金將於還車後退回)</div>
+</div>
               </td>                     
             </tr>
             <tr>
