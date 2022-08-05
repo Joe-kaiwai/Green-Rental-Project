@@ -76,7 +76,7 @@ function resetPassword($newPassword,$newPasswordConfirmation){
 function addNewCar($carName,$carRent,$carImg,$carEngine,$carMP,$carMT,$carBatteryCapacity,$carRange,$carSeating,$carWeight,$carDimensions){
     global $dbConnection;
 
-    $updatePassword = "INSERT INTO `green_rental_project`.`car`(`name`, `price`, `image`, `engine type`, `max_motor_power`, `max_motor_torque`, `gross_battery_capacity`, `electric_range`, `seating`, `weight`, `dimensions`) VALUES ('$carName','$carRent','$carImg','$carEngine','$carMP','$carMT','$carBatteryCapacity','$carRange','$carSeating','$carWeight','$carDimensions')";
+    $updatePassword = "INSERT INTO `mY7D8u4FAO`.`car`(`name`, `price`, `image`, `engine type`, `max_motor_power`, `max_motor_torque`, `gross_battery_capacity`, `electric_range`, `seating`, `weight`, `dimensions`) VALUES ('$carName','$carRent','$carImg','$carEngine','$carMP','$carMT','$carBatteryCapacity','$carRange','$carSeating','$carWeight','$carDimensions')";
 
     if(mysqli_query($dbConnection, $updatePassword)){
         echo '<script>alert("Data Updated");
